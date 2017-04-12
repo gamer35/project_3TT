@@ -25,7 +25,6 @@
         
 *******************************************************************************
 *******************************************************************************
-
                            CUSTOM DEFINED METHODS LIST
 
                                  
@@ -67,13 +66,13 @@ public class Quang_TeamT
 {
    public static void main (String [] Args)
    {
-      Quang_teamT tt = new Quang_teamT();
+      Quang_TeamT tt = new Quang_TeamT();
       
       
       tt.lootFor();
    }
    
-   public void lootFor();
+   public void lootFor()
    {
       String favMovie;
       
