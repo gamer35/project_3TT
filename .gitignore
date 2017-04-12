@@ -1,88 +1,173 @@
+
+import javax.swing.JOptionPane;
+
 /******************************************************************************
+
 *******************************************************************************
+
 *******************************************************************************
+
                                                                                 
+
                    		         ID INFORMATION                                 
+
                                                                                 
+
    Programmer                          :		                       
+
    Assignment #                        :                    
+
    Assignment Name                     :                    
+
    Course # and Title                  :                    
+
    Class Meeting Time                  :                    
+
    Instructor                          :                    
+
    Hours                               :                    
+
    Difficulty                          :                    
+
    Completion Date                     :                    
+
    File Name                           :                                     
 
-*******************************************************************************
+
+
 *******************************************************************************
 
+*******************************************************************************
+
+
+
                               PROGRAM DESCRIPTION                   
+
                    
+
          
+
         
+
         
+
 *******************************************************************************
+
 *******************************************************************************
+
+
+
                            CUSTOM DEFINED METHODS LIST
+
+
 
                                  
 
 
 
+
+
+
+
 *******************************************************************************
+
 *******************************************************************************
+
+
 
                                      MEDIA
+
                                      
+
    
+
       
+
 *******************************************************************************
+
 *******************************************************************************
+
+
 
                                     CREDITS	                        
+
                                            
+
             
+
                                             
+
               
+
 *******************************************************************************
+
 *******************************************************************************
+
 ******************************************************************************/
+
 public class 3tt {
+
 		
+
 		public static void main(String[] args) {
+
 			
+
 			
+
 		}
+
 }
 
+
+
 import java.awt.*;   
+
 import javax.swing.*;   
+
 import java.applet.*;
+
 import java.net.URL; 
 
+
+
 public class Quang_TeamT
+
 {
+
    public static void main (String [] Args)
+
    {
+
       Quang_TeamT tt = new Quang_TeamT();
+
       
+
       
+
       tt.lootFor();
+
    }
+
    
-   public void lootFor()
-   {
-      String favMovie;
+
+   public void lootFor(){
+
+      String favMovie = "";
+      String input;
+      int movies = 0;
+
       
+
       JOptionPane.showMessageDialog (null, "Hello");
+
       
-      for ( favMovie != "none"; )
-      {
-         favMovie = JOptionPane.showInputDialog (null, "What your favorite movie?");
+     input = JOptionPane.showInputDialog(null, "How many favorite movies do you have");
+                movies = Integer.parseInt(input);
+
+      for(int test = 0; test < movies; test++ ){
+         favMovie = JOptionPane.showInputDialog (null, "What your favorite movies?");
       }
-
-
-
+   }
+}
 
