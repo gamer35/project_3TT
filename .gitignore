@@ -151,7 +151,75 @@ public class Quang_TeamT
       tt.loop_For();
 
    }
-   
+   public void do_while_loop(){
+        
+        //////////////////////////////////////////////////////////////////////////////
+
+        //		               LOCAL VARIABLE/OBJECT DECLARATIONS  
+
+        //////////////////////////////////////////////////////////////////////////////
+        Icon icon1 = new ImageIcon("Sports.gif");
+        Icon icon2 = new ImageIcon("thankyou.gif");
+        String revenge = "",input,input2 = "",input3 = "", user = "";
+        //////////////////////////////////////////////////////////////////////////////
+        
+        // Do While loop ask for users favorite sports team then validates at the end of the process
+        do{
+            
+             input = 
+                     (String) JOptionPane.showInputDialog(null, "Ok " + user + " what is you favorite sports team?\n" 
+                                                                 + "P.S Ill keep asking untill you enter Yankees.", "Favorite Team?", 
+                                                                 JOptionPane.QUESTION_MESSAGE, icon1 ,null, "Yankess");
+                // Do While loop thanks the user for entering thier favorate team and asks them for their second favorite team then validates at the end of the process
+                 do{
+                    
+                     // A Joptionpane that thanks the user for enetring their favortie team information
+                     JOptionPane.showMessageDialog(null, user + "Thank you for entering you favorite team", "Thank You", 
+                             JOptionPane.INFORMATION_MESSAGE, icon2);
+                     
+                     // JoptionPane that asks the user for thier second favorite team
+                     input2 = 
+                             (String) JOptionPane.showInputDialog(null, "What is you second favorite team?", "Favorite Team", 
+                                                             JOptionPane.QUESTION_MESSAGE, icon1, null, "Red Socks");
+                     
+                 // Validates that the user inputed something    
+                 }while(input2 == "");
+                 
+                        //a do while loop that asks for the users rival team and thanks them for enetring their second team
+                        // the loop validates the information at the end of the process
+                        do{
+                           //JoptionPane that thanks the user for enetring their second favorite team 
+                            JOptionPane.showMessageDialog(null, "Thank You for enetering your second favorite team", "Thank You", JOptionPane.INFORMATION_MESSAGE,icon2);
+                            
+                            //Joption pans asking for their rival team
+                            input3 = 
+                                    (String) JOptionPane.showInputDialog(null, "What is your rival team?\n"
+                                                            + "P.S dont enter Giants or we will stay here", "Rival Team?", JOptionPane.INFORMATION_MESSAGE, icon1,null, "Chargers");
+                            
+                         //validates that the user   
+                        }while(input3 == "Giants" || input3 == "giants" && input3 == "");
+                        
+                                // do while loop tells the user to tell the user that his team sucks and validates that he did so
+                                do{
+                                    
+                                    // tells the user the to input sucks into a input dialog joption statement
+                                    revenge = 
+                                            (String) JOptionPane.showInputDialog(null, "Now I want you to say the " + input2 + " suck", "Team Sucks?", 
+                                                    JOptionPane.INFORMATION_MESSAGE,icon1,null, "Sucks");
+                                
+                                //valisates that the user inputed sucks into the Joptionpane    
+                                }while(revenge != "Suck" || revenge != "suck" && revenge == "");
+        
+        //valisates that the user inputed tankess int he first JoptionPane if they didnt it will restart the code                        
+        }while(input != "Yankees" || input != "yankees" && input != "");
+        
+        //Joptionpane to concragulate the user that they got out of the do while loop
+        JOptionPane.showMessageDialog(null, "Congrats you didnt piss me off,\n"
+                                          + "with your selection of sports teams", "Congrats", JOptionPane.INFORMATION_MESSAGE, icon1);
+        
+        
+        
+    }
    
       
 
