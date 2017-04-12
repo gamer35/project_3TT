@@ -57,3 +57,33 @@ public class 3tt {
 			
 		}
 }
+
+import java.awt.*;   
+import javax.swing.*;   
+import java.applet.*;
+import java.net.URL; 
+
+public class Quang_TeamT
+{
+   public static void main (String [] Args)
+   {
+      Quang_teamT tt = new Quang_teamT();
+      
+      
+      tt.lootFor();
+   }
+   
+   public void lootFor();
+   {
+      String favMovie;
+      
+      JOptionPane.showMessageDialog (null, "Hello");
+      
+      for ( favMovie != "none"; )
+      {
+         favMovie = JOptionPane.showInputDialog (null, "What your favorite movie?");
+      }
+
+
+
+
