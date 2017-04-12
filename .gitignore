@@ -244,7 +244,7 @@ public void loop_For()
       
       
       
-      ///first get the amount of favorite color from user
+      /// a JOptionPane to get the amount of favorite color from user
       
       numFavColor = (String) JOptionPane.showInputDialog (null, "How many favorite colors you have?", 
                                                    "Just Curious...",
@@ -261,13 +261,13 @@ public void loop_For()
                                                is no long less than the number of color*/ 
       
       {
-      	 // asking for favorite color	
+      	 // a JOptionPane to ask the user for their favorite color	
          favColor = (String) JOptionPane.showInputDialog (null, "What your favorite color?",
                                                    "Just Curious...",
                                                    JOptionPane.QUESTION_MESSAGE,rainbow, null, "Red");
       
          
-	 // burpback the color in a friendly way
+	 // a JOptionPane to burpback the user's favorite color in a friendly way
 	 JOptionPane.showMessageDialog(null, "Wow " + favColor + " is a nice color",
                                              "Nice Color...",
                                              JOptionPane.INFORMATION_MESSAGE,thumb);
