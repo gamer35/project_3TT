@@ -76,6 +76,10 @@ import javax.swing.JOptionPane;
 
 
                                      MEDIA
+        
+	rainbow = https://www.tenor.co/view/rainbow-gif-3571154
+        thumb = http://imgur.com/gallery/u9CCe  
+        question2 = http://www.clipartbest.com/clipart-KcnXL8Ldi*/
 
                                      
 
@@ -144,7 +148,7 @@ public class Quang_TeamT
       
 
       tt.do_while_loop();
-      tt.lootFor();
+      tt.loop_For();
 
    }
        public void do_while_loop(){
@@ -188,23 +192,48 @@ public class Quang_TeamT
 
    
 
-   public void lootFor(){
+public void loop_For()
+   {
+ 
+ //////////////////////////////////////////////////////////////////////////////
+      
+//	DECLARE  LOCAL VARIABLE/ OBJECT DECLARATION   ////
 
-      String favMovie = "";
-      String input;
-      int movies = 0;
+/////////////////////////////////////////////////////////////////////////////
 
       
-
-      JOptionPane.showMessageDialog (null, "Hello");
-
+      String favColor = "";
+      String numFavColor;
+      int color = 0;
       
-     input = JOptionPane.showInputDialog(null, "How many favorite movies do you have");
-                movies = Integer.parseInt(input);
-
-      for(int test = 0; test < movies; test++ ){
-         favMovie = JOptionPane.showInputDialog (null, "What your favorite movies?");
+      ImageIcon rainbow = new ImageIcon ("rainbow1.gif");
+      ImageIcon thumb = new ImageIcon ("thumbUP.gif");
+      ImageIcon question = new ImageIcon ("question2.gif");
+/////////////////////////////////////////////////////////////////////////////      
+      
+      
+      
+      
+      numFavColor = (String) JOptionPane.showInputDialog (null, "How many favorite colors you have?", 
+                                                   "Just Curious...",
+                                                   JOptionPane.QUESTION_MESSAGE,question,null, "1");
+      
+         color = Integer.parseInt ( numFavColor);
+      
+      
+      for ( int num = 0; num < color; num ++ )    //// for loot
+      {
+         favColor = (String) JOptionPane.showInputDialog (null, "What your favorite color?",
+                                                   "Just Curious...",
+                                                   JOptionPane.QUESTION_MESSAGE,rainbow, null, "Red");
+      
+         JOptionPane.showMessageDialog(null, "Wow " + favColor + " is a nice color",
+                                             "Nice Color...",
+                                             JOptionPane.INFORMATION_MESSAGE,thumb);
       }
+   
+      
    }
+
 }
 
