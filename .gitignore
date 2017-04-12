@@ -143,11 +143,48 @@ public class Quang_TeamT
 
       
 
-      
-
+      tt.do_while_loop();
       tt.lootFor();
 
    }
+       public void do_while_loop(){
+        
+        String revenge = "",input,input2 = "",input3 = "", user = "";
+        
+        do{
+            
+             input = 
+                    (String) JOptionPane.showInputDialog(null, "Ok " + user + " what is you favorite sports team?\n"
+                                            + "P.S Ill keep asking untill you enter Yankees.", "Do-While Loop", 
+                                            JOptionPane.INFORMATION_MESSAGE,null,null, "Yankees");
+                 do{
+                    
+                     JOptionPane.showMessageDialog(null, user + "Thank you for entering you favorite team");
+                     input2 = 
+                             JOptionPane.showInputDialog(null, "What is you second favorite team?");
+                     
+                 }while(input2 == "");
+                 
+                        do{
+                            
+                            JOptionPane.showMessageDialog(null, "Thank You for enetering your second favorite team");
+                            
+                            input3 = 
+                                    JOptionPane.showInputDialog(null, "What is your rival team?\n"
+                                                            + "P.S dont enter Giants or we will stay here");
+                        }while(input3 == "Giants" || input3 == "giants");
+                        
+                                do{
+                                    
+                                    revenge = 
+                                            JOptionPane.showInputDialog(null, "Now I want you to say the " + input2 + " suck");
+                                    
+                                }while(revenge != "Suck" || revenge != "suck");
+            
+        }while(input != "Yankees" || input != "yankees");
+        
+        JOptionPane.showMessageDialog(null, "Congrats you didnt piss me off,\n"
+                                          + "with your selection of sports teams");
 
    
 
