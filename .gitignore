@@ -222,7 +222,7 @@ public void loop_For()
          color = Integer.parseInt ( numFavColor);
       
       
-      /*for loot: num = starting number of the loot
+      /*for loop: num = starting number of the loot
                   
                   color = number of color*/
 
