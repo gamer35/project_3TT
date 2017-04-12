@@ -213,6 +213,7 @@ public void loop_For()
       
       
       
+      ///first get the amount of favorite color from user
       
       numFavColor = (String) JOptionPane.showInputDialog (null, "How many favorite colors you have?", 
                                                    "Just Curious...",
@@ -221,13 +222,22 @@ public void loop_For()
          color = Integer.parseInt ( numFavColor);
       
       
-      for ( int num = 0; num < color; num ++ )    //// for loot
+      /*for loot: num = starting number of the loot
+                  
+                  color = number of color*/
+
+      for ( int num = 0; num < color; num ++ )  /*the loot will continue..till starting number 
+                                               is no long less than the number of color*/ 
+      
       {
+      	 // asking for favorite color	
          favColor = (String) JOptionPane.showInputDialog (null, "What your favorite color?",
                                                    "Just Curious...",
                                                    JOptionPane.QUESTION_MESSAGE,rainbow, null, "Red");
       
-         JOptionPane.showMessageDialog(null, "Wow " + favColor + " is a nice color",
+         
+	 // burpback the color in a friendly way
+	 JOptionPane.showMessageDialog(null, "Wow " + favColor + " is a nice color",
                                              "Nice Color...",
                                              JOptionPane.INFORMATION_MESSAGE,thumb);
       }
