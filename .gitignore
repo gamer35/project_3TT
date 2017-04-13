@@ -246,11 +246,12 @@ public void loop_For()
       
       /// a JOptionPane to get the amount of favorite color from user
       
+      // try put 0 favorite number and see what happen
       numFavColor = (String) JOptionPane.showInputDialog (null, "How many favorite colors you have?", 
                                                    "Just Curious...",
                                                    JOptionPane.QUESTION_MESSAGE,question,null, "1");
       
-         color = Integer.parseInt ( numFavColor);
+        color = Integer.parseInt ( numFavColor);
       
       
       /*for loop: num = starting number of the loot
