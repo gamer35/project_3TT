@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 
                                                                                 
 
-   Programmer                          :		Daimeon Rodriguez, Quang Nguyen, Donald Vuong Ryu, Sasano                       
+   Programmer                          :		Daimeon Rodriguez, Quang Nguyen, Donald Vuong, Ryu Sasano                       
 
    Assignment #                        :                  
 
@@ -123,7 +123,7 @@ public class 3tt {
 
 }
 
-
+import java.util.Scanner;
 
 import java.awt.*;   
 
@@ -149,6 +149,12 @@ public class Quang_TeamT
 
       tt.do_while_loop();
       tt.loop_For();
+      
+      tt.basic_Counting_Loop();
+      
+      tt.basic_Counting_Loop2();
+      
+      tt.guess_My_Favorite_Num();
 
    }
    public void do_while_loop(){
@@ -349,31 +355,91 @@ public class Donald_3TT
       }
    }
    
+   
+   //***********************************************************************************************
+	
+   //NAME:	  basic_Counting_Loop
+   //DESCRIPTION: A basic counting while loop that counts from 0 to 50 while the statement is true. 
+	
+   //***********************************************************************************************
+	
    public void basic_Counting_Loop()
 	{
+		// LOCAL DEFINED VARIABLE
 		int number = 0;
 		
 		while (number < 51)
 		{
+			// Displays a line of text.
 			System.out.println(number);
+			
+			//increments the number by 1.
 			number++;
 		} 
 		 
 	}
 	
+  //***************************************************************************************************
+	
+  //NAME:			basic_Counting_Loop2
+  //DESCRIPTION: A basic counting while loop that displays a line of text while the statment is true. 
+	
+  //****************************************************************************************************
+	
+	
 	public void basic_Counting_Loop2()
 	{
+		// LOCAL DEFINED VARIABLE
 		int age = -11;
 		
+		//statement
 		while (age < 11 )
 		{
+			//Displays a line of text.
 			System.out.println("she loves me...");
+			
+			// increments number by 1.
 			age++;
 		}
+		
+		// Displays a line of text.
 		System.out.println("Funtion complete");
 	}
 	
 }
+
+//****************************************************************************************************************
+	
+//NAME:	       guess_My_Favorite_Num()
+//DESCRIPTION: A while loop that asks the user to guess my favorite number then displays if it is right or wrong
+	       with a line of text depanding on the users input.
+	
+//****************************************************************************************************************
+	
+
+	public void guess_My_Favorite_Num()
+	{
+		////////////////////////////////////////////
+		
+		//LOCAL DEFINED VARIABLE/OBJECT
+		int favNumber = 1;
+		
+		Scanner num = new Scanner(System.in);
+		///////////////////////////////////////////
+		
+		System.out.println("Hey can you guess what my favorite number is?");
+		int numGuess = num.nextInt();
+		
+		while (favNumber != numGuess)
+		{
+			System.out.println("I am sorry but that is not my favoirte color please try again.");
+		     numGuess = num.nextInt();
+		}
+		
+		 	System.out.println("OMG yes 1 is my favorite number!");
+	}
+
+
 }
 
 
