@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 
                                                                                 
 
-   Programmer                          :		Daimeon Rodriguez, Quang Nguyen, Donald Vuong                       
+   Programmer                          :		Daimeon Rodriguez, Quang Nguyen, Donald Vuong Ryu, Sasano                       
 
    Assignment #                        :                  
 
@@ -347,7 +347,33 @@ public class Donald_3TT
          JOptionPane.showMessageDialog(null,"Your favorite foods are as listed: "
                                         +currentFood );
       }
-   }      
+   }
+   
+   public void basic_Counting_Loop()
+	{
+		int number = 0;
+		
+		while (number < 51)
+		{
+			System.out.println(number);
+			number++;
+		} 
+		 
+	}
+	
+	public void basic_Counting_Loop2()
+	{
+		int age = -11;
+		
+		while (age < 11 )
+		{
+			System.out.println("she loves me...");
+			age++;
+		}
+		System.out.println("Funtion complete");
+	}
+	
+}
 }
 
 
