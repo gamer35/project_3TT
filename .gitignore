@@ -277,4 +277,76 @@ public void loop_For()
    }
 
 }
+public class Donald_3TT
+{
+   public static void main(String[] args)
+   {
+      //constructor one time for da one time
+      Donald_3TT each = new Donald_3TT();
+      
+      each.for_each();
+   }
+   public void for_each()
+   {
+      /////////////////////////////////////////////////////////////////////////////
+      
+      //	               LOCAL VARIABLE/ OBJECT DECLARATION                     ////
+      
+      /////////////////////////////////////////////////////////////////////////////
+     
+      String strNumFood;
+      int numFood;
+      
+      /////////////////////////////////////////////////////////////////////////////
+      
+      //Basically allowing the user to manipulate the amount of times
+      //they can put in an answer using "int numFood"
+      strNumFood = JOptionPane.showInputDialog(null, "Now, how many favorite foods do you have?");
+      
+      numFood = Integer.parseInt(strNumFood);
+      
+      //Create an array, but what is an ARRAY?!?!
+      //basically an array is a grouping of data, think control-g'ing in a graphic software 
+      
+      //FOR EXAMPLE: grouping layers in photoshop, or grouping clips together 
+      //in a video editing software.
+      
+      //examples of data: String, int, double, float...WHATEVA U WANT
+      String[] foods = new String[numFood];
+      int[] scale = new int[numFood];
+      
+      //start a forloop right here
+      //asking for favorite food and prompting user to guess on a scale of 1-50, and infinitely loops until 
+      //you type in 50. 
+      for(int counter = 0; counter < numFood ; counter++)
+      {
+         foods[ counter ] = JOptionPane.showInputDialog(null,"Please Enter Favorite Food Number " +(counter+1));
+         
+         for(int i = 0; i != 50;)
+         {
+            String Input = JOptionPane.showInputDialog(null,"Guess how much I like " + foods[ counter ] + " on a scale of 1-50!" 
+                                                      +"\nKeep trying til you get it right!");
+            i = Integer.parseInt(Input);
+         }
+      }
+   
+//For-Each Loop: designed for data structures such as arrays / arraylist
+//AKA enhanced For-Loop 
+
+//The foreach syntax allows to be written in a more natural and less clunky way.
+
+      
+      //For-Each Loop happens here!!!
+      //looking like For loop up there? whats inside the parenthesis doe? 
+      //Even though this looks like a for loop, it reads as...
+      
+//"for each' String currentFood IN foods(array), i will perform a task"
+      for( String currentFood : foods )
+      {
+         JOptionPane.showMessageDialog(null,"Your favorite foods are as listed: "
+                                        +currentFood );
+      }
+   }      
+}
+
 
