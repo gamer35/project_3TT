@@ -1,445 +1,553 @@
-
-import javax.swing.JOptionPane;
-
 /******************************************************************************
-
 *******************************************************************************
-
 *******************************************************************************
-
-                                                                                
 
                    		         ID INFORMATION                                 
 
+
+
                                                                                 
 
-   Programmer                          :		Daimeon Rodriguez, Quang Nguyen, Donald Vuong, Ryu Sasano                       
-
-   Assignment #                        :                  
-
-   Assignment Name                     :                    
-
-   Course # and Title                  :                    
-
-   Class Meeting Time                  :                    
-
-   Instructor                          :                    
-
-   Hours                               :                    
-
-   Difficulty                          :                    
-
-   Completion Date                     :                    
-
-   File Name                           :                                     
 
 
-
-*******************************************************************************
+   Programmer                          :		1.Daimeon Rodriguez, 
+                                                2.Quang Nguyen, 
+                                                3.Donald Vuong 
+                                                4.Ryu Sasano                       
+   Assignment #                        :        Project#3TT          
+   Assignment Name                     :        Team Tutorial            
+   Course # and Title                  :        CSIC 190 T-TH             
+   Class Meeting Time                  :        1:00 - 4:05            
+   Instructor                          :        Professor Forman            
+   Hours                               :        1.4
+                                                2.
+                                                3. 
+                                                4. 
+   Difficulty                          :        1.4
+                                                2. 
+                                                3. 
+                                                4. 
+   Completion Date                     :        4/13/17            
+   File Name                           :        Project_3tt_01.java                             
 
 *******************************************************************************
-
-
+*******************************************************************************
 
                               PROGRAM DESCRIPTION                   
 
-                   
-
-         
-
-        
-
-        
 
 *******************************************************************************
-
 *******************************************************************************
-
-
 
                            CUSTOM DEFINED METHODS LIST
-
-
-
-                                 
-
-
-
-
-
-
+                           
+                            do_while_loop
+                            loop_For
+                            for_each
+                            basic_Counting_Loop
+                            basic_Counting_Loop2
+                            guess_My_Favorite_Num
 
 *******************************************************************************
-
 *******************************************************************************
-
-
 
                                      MEDIA
-        
+
 	rainbow = https://www.tenor.co/view/rainbow-gif-3571154
+
         thumb = http://imgur.com/gallery/u9CCe  
-        question2 = http://www.clipartbest.com/clipart-KcnXL8Ldi*/
 
-                                     
-
-   
-
-      
+        question2 = http://www.clipartbest.com/clipart-KcnXL8Ldi
 
 *******************************************************************************
-
 *******************************************************************************
 
-
-
-                                    CREDITS	                        
-
-                                           
-
-            
-
-                                            
-
-              
-
+                                    CREDITS
+                                    
+        Daimeon Rodriguez: Do-While loops
+        Quang Nguyen: For loops
+        Donald Vuong: For-Each loops
+        Ryu Sasano: While Loops
+                            Thank You StackOverFlow!
+        
 *******************************************************************************
-
 *******************************************************************************
-
 ******************************************************************************/
 
-public class 3tt {
-
-		
-
-		public static void main(String[] args) {
-
-			
-
-			
-
-		}
-
-}
-
-import java.util.Scanner;
-
+import javax.swing.JOptionPane;
 import java.awt.*;   
-
 import javax.swing.*;   
-
 import java.applet.*;
+import java.net.URL;
+import java.util.Scanner;
+public class Project_3tt_01{
+        //*********************************************************************************************** 
 
-import java.net.URL; 
+   //NAME:	  main
 
+   //DESCRIPTION: Main method to call other methods in the class to complete operations.  
 
+   //***********************************************************************************************
+    public static void main(String[] args)
+        {
+            Project_3tt_01 m = new Project_3tt_01();
+            
+            m.do_while_loop();
+            m.loop_For();
+            m.for_each();
+            m.basic_Counting_Loop();
+            m.basic_Counting_Loop2();
+            m.guess_My_Favorite_Num();
+            
+        }
+    //*********************************************************************************************** 
+    //NAME:	  do_while_loop 
+    //DESCRIPTION: Do-While loop comples iterations atleat once before testing boolean expression.  
+    //BY: Daimeon Rodriguez
+    //*********************************************************************************************** 
+    public void do_while_loop()
+        {
 
-public class Quang_TeamT
-
-{
-
-   public static void main (String [] Args)
-
-   {
-
-      Quang_TeamT tt = new Quang_TeamT();
-
-      
-
-      tt.do_while_loop();
-      tt.loop_For();
-      
-      tt.basic_Counting_Loop();
-      
-      tt.basic_Counting_Loop2();
-      
-      tt.guess_My_Favorite_Num();
-
-   }
-   public void do_while_loop(){
         
+
         //////////////////////////////////////////////////////////////////////////////
+
+
 
         //		               LOCAL VARIABLE/OBJECT DECLARATIONS  
 
+
+
         //////////////////////////////////////////////////////////////////////////////
+
         Icon icon1 = new ImageIcon("Sports.gif");
+
         Icon icon2 = new ImageIcon("thankyou.gif");
-        String revenge = "",input,input2 = "",input3 = "", user = "";
-        //////////////////////////////////////////////////////////////////////////////
+
+        String revenge,input,input2 = "",input3, user = "";
         
-        // Do While loop ask for users favorite sports team then validates at the end of the process
+        int i = 0;
+
+        //////////////////////////////////////////////////////////////////////////////
+
+        
+
+        // Do While loop ask for users favorite sports team then validates at the end of the process at that runs at least one iteration
+
         do{
+
             
+
              input = 
+
                      (String) JOptionPane.showInputDialog(null, "Ok " + user + " what is you favorite sports team?\n" 
+
                                                                  + "P.S Ill keep asking untill you enter Yankees.", "Favorite Team?", 
-                                                                 JOptionPane.QUESTION_MESSAGE, icon1 ,null, "Yankess");
+
+                                                                 JOptionPane.QUESTION_MESSAGE, icon1 ,null, "Yankees");
+
                 // Do While loop thanks the user for entering thier favorate team and asks them for their second favorite team then validates at the end of the process
+                //that runs at least one iteration
                  do{
+
                     
+
                      // A Joptionpane that thanks the user for enetring their favortie team information
+
                      JOptionPane.showMessageDialog(null, user + "Thank you for entering you favorite team", "Thank You", 
+
                              JOptionPane.INFORMATION_MESSAGE, icon2);
+
                      
+
                      // JoptionPane that asks the user for thier second favorite team
+
                      input2 = 
+
                              (String) JOptionPane.showInputDialog(null, "What is you second favorite team?", "Favorite Team", 
+
                                                              JOptionPane.QUESTION_MESSAGE, icon1, null, "Red Socks");
+
                      
+
                  // Validates that the user inputed something    
+
                  }while(input2 == "");
+
                  
+
                         //a do while loop that asks for the users rival team and thanks them for enetring their second team
-                        // the loop validates the information at the end of the process
+                        // the loop validates the information at the end of the process that runs at least one iteration
                         do{
+
                            //JoptionPane that thanks the user for enetring their second favorite team 
+
                             JOptionPane.showMessageDialog(null, "Thank You for enetering your second favorite team", "Thank You", JOptionPane.INFORMATION_MESSAGE,icon2);
+
                             
+
                             //Joption pans asking for their rival team
+
                             input3 = 
+
                                     (String) JOptionPane.showInputDialog(null, "What is your rival team?\n"
+
                                                             + "P.S dont enter Giants or we will stay here", "Rival Team?", JOptionPane.INFORMATION_MESSAGE, icon1,null, "Chargers");
+
                             
+
                          //validates that the user   
                         }while(input3 == "Giants" || input3 == "giants" && input3 == "");
                         
                                 // do while loop tells the user to tell the user that his team sucks and validates that he did so
+                                // that runs at least one iteration
                                 do{
-                                    
+
                                     // tells the user the to input sucks into a input dialog joption statement
+
                                     revenge = 
                                             (String) JOptionPane.showInputDialog(null, "Now I want you to say the " + input2 + " suck", "Team Sucks?", 
                                                     JOptionPane.INFORMATION_MESSAGE,icon1,null, "Sucks");
-                                
-                                //valisates that the user inputed sucks into the Joptionpane    
-                                }while(revenge != "Suck" || revenge != "suck" && revenge == "");
+                                    
+                                //valisates that the user inputed sucks into the Joptionpane
+                                //
+                                }while(revenge != "Sucks" || revenge != "sucks");
+
+                                JOptionPane.showMessageDialog(null, "Works");
         
+
         //valisates that the user inputed tankess int he first JoptionPane if they didnt it will restart the code                        
+
         }while(input != "Yankees" || input != "yankees" && input != "");
+
         
+
         //Joptionpane to concragulate the user that they got out of the do while loop
+
         JOptionPane.showMessageDialog(null, "Congrats you didnt piss me off,\n"
-                                          + "with your selection of sports teams", "Congrats", JOptionPane.INFORMATION_MESSAGE, icon1);
-        
-        
-        
+
+                                          + "with your selection of sports teams", "Congrats", JOptionPane.INFORMATION_MESSAGE, icon1);        
     }
-   
-      
+    //*********************************************************************************************** 
+    //NAME:	  loop_For 
+    //DESCRIPTION: .  
+    //BY: Quang Nguyen
+    //*********************************************************************************************** 
+    public void loop_For()
+        {
 
-public void loop_For()
-   {
- 
- //////////////////////////////////////////////////////////////////////////////
-      
-//	DECLARE  LOCAL VARIABLE/ OBJECT DECLARATION   ////
 
-/////////////////////////////////////////////////////////////////////////////
 
-      
-      String favColor = "";
-      String numFavColor;
-      int color = 0;
-      
-      ImageIcon rainbow = new ImageIcon ("rainbow1.gif");
-      ImageIcon thumb = new ImageIcon ("thumbUP.gif");
-      ImageIcon question = new ImageIcon ("question2.gif");
-/////////////////////////////////////////////////////////////////////////////      
-      
-      
-      
-      /// a JOptionPane to get the amount of favorite color from user
-      
-      // try put 0 favorite number and see what happen
-      numFavColor = (String) JOptionPane.showInputDialog (null, "How many favorite colors you have?", 
-                                                   "Just Curious...",
-                                                   JOptionPane.QUESTION_MESSAGE,question,null, "1");
-      
-        color = Integer.parseInt ( numFavColor);
-      
-      
-      /*for loop: num = starting number of the loot
-                  
-                  color = number of color*/
 
-      for ( int num = 0; num < color; num ++ )  /*the loot will continue..till starting number 
-                                               is no long less than the number of color*/ 
-      
-      {
-      	 // a JOptionPane to ask the user for their favorite color	
-         favColor = (String) JOptionPane.showInputDialog (null, "What your favorite color?",
-                                                   "Just Curious...",
-                                                   JOptionPane.QUESTION_MESSAGE,rainbow, null, "Red");
-      
-         
-	 // a JOptionPane to burpback the user's favorite color in a friendly way
-	 JOptionPane.showMessageDialog(null, "Wow " + favColor + " is a nice color",
-                                             "Nice Color...",
-                                             JOptionPane.INFORMATION_MESSAGE,thumb);
-      }
-   
-      
-   }
 
-}
-public class Donald_3TT
-{
-   public static void main(String[] args)
-   {
-      //constructor one time for da one time
-      Donald_3TT each = new Donald_3TT();
-      
-      each.for_each();
-   }
-   public void for_each()
-   {
+
+        //////////////////////////////////////////////////////////////////////////////
+        //	DECLARE  LOCAL VARIABLE/ OBJECT DECLARATION   ////
+        /////////////////////////////////////////////////////////////////////////////
+
+          String favColor = "";
+
+          String numFavColor;
+
+          int color = 0;
+
+          ImageIcon rainbow = new ImageIcon ("rainbow1.gif");
+
+          ImageIcon thumb = new ImageIcon ("thumbUP.gif");
+
+          ImageIcon question = new ImageIcon ("question2.gif");
+
+        /////////////////////////////////////////////////////////////////////////////      
+
+
+
+
+
+
+
+          /// a JOptionPane to get the amount of favorite color from user
+
+
+
+          // try put 0 favorite number and see what happen
+
+          numFavColor = (String) JOptionPane.showInputDialog (null, "How many favorite colors you have?", 
+
+                                                       "Just Curious...",
+
+                                                       JOptionPane.QUESTION_MESSAGE,question,null, "1");
+
+
+
+            color = Integer.parseInt ( numFavColor);
+
+
+
+
+
+          /*for loop: num = starting number of the loot
+
+
+
+                      color = number of color*/
+
+
+
+          for ( int num = 0; num < color; num ++ )  /*the loot will continue..till starting number 
+
+                                                   is no long less than the number of color*/ 
+
+
+
+          {
+
+             // a JOptionPane to ask the user for their favorite color	
+
+             favColor = (String) JOptionPane.showInputDialog (null, "What your favorite color?",
+
+                                                       "Just Curious...",
+
+                                                       JOptionPane.QUESTION_MESSAGE,rainbow, null, "Red");
+
+
+
+
+
+             // a JOptionPane to burpback the user's favorite color in a friendly way
+
+             JOptionPane.showMessageDialog(null, "Wow " + favColor + " is a nice color",
+
+                                                 "Nice Color...",
+
+                                                 JOptionPane.INFORMATION_MESSAGE,thumb);
+
+          }
+
+
+
+
+
+       }
+    //*********************************************************************************************** 
+    //NAME:	  for_each 
+    //DESCRIPTION: .  
+    //BY: Donald Vuong
+    //*********************************************************************************************** 
+    public void for_each()
+        {
+
       /////////////////////////////////////////////////////////////////////////////
+
       
+
       //	               LOCAL VARIABLE/ OBJECT DECLARATION                     ////
+
       
+
       /////////////////////////////////////////////////////////////////////////////
+
      
+
       String strNumFood;
+
       int numFood;
+
       
+
       /////////////////////////////////////////////////////////////////////////////
+
       
+
       //Basically allowing the user to manipulate the amount of times
+
       //they can put in an answer using "int numFood"
+
       strNumFood = JOptionPane.showInputDialog(null, "Now, how many favorite foods do you have?");
+
       
+
       numFood = Integer.parseInt(strNumFood);
+
       
+
       //Create an array, but what is an ARRAY?!?!
+
       //basically an array is a grouping of data, think control-g'ing in a graphic software 
+
       
+
       //FOR EXAMPLE: grouping layers in photoshop, or grouping clips together 
+
       //in a video editing software.
+
       
+
       //examples of data: String, int, double, float...WHATEVA U WANT
+
       String[] foods = new String[numFood];
+
       int[] scale = new int[numFood];
+
       
+
       //start a forloop right here
+
       //asking for favorite food and prompting user to guess on a scale of 1-50, and infinitely loops until 
+
       //you type in 50. 
+
       for(int counter = 0; counter < numFood ; counter++)
+
       {
+
          foods[ counter ] = JOptionPane.showInputDialog(null,"Please Enter Favorite Food Number " +(counter+1));
+
          
+
          for(int i = 0; i != 50;)
+
          {
+
             String Input = JOptionPane.showInputDialog(null,"Guess how much I like " + foods[ counter ] + " on a scale of 1-50!" 
+
                                                       +"\nKeep trying til you get it right!");
+
             i = Integer.parseInt(Input);
+
          }
+
       }
+
    
+
 //For-Each Loop: designed for data structures such as arrays / arraylist
+
 //AKA enhanced For-Loop 
+
+
 
 //The foreach syntax allows to be written in a more natural and less clunky way.
 
+
+
       
+
       //For-Each Loop happens here!!!
+
       //looking like For loop up there? whats inside the parenthesis doe? 
+
       //Even though this looks like a for loop, it reads as...
+
       
+
 //"for each' String currentFood IN foods(array), i will perform a task"
+
       for( String currentFood : foods )
+
       {
+
          JOptionPane.showMessageDialog(null,"Your favorite foods are as listed: "
+
                                         +currentFood );
+
       }
-   }
-   
-   
-   //***********************************************************************************************
-	
-   //NAME:	  basic_Counting_Loop
-   //DESCRIPTION: A basic counting while loop that counts from 0 to 50 while the statement is true. 
-	
-   //***********************************************************************************************
-	
-   public void basic_Counting_Loop()
-	{
-		// LOCAL DEFINED VARIABLE
-		int number = 0;
-		
-		while (number < 51)
-		{
-			// Displays a line of text.
-			System.out.println(number);
-			
-			//increments the number by 1.
-			number++;
-		} 
-		 
-	}
-	
-  //***************************************************************************************************
-	
-  //NAME:			basic_Counting_Loop2
-  //DESCRIPTION: A basic counting while loop that displays a line of text while the statment is true. 
-	
-  //****************************************************************************************************
-	
-	
-	public void basic_Counting_Loop2()
-	{
-		// LOCAL DEFINED VARIABLE
-		int age = -11;
-		
-		//statement
-		while (age < 11 )
-		{
-			//Displays a line of text.
-			System.out.println("she loves me...");
-			
-			// increments number by 1.
-			age++;
-		}
-		
-		// Displays a line of text.
-		System.out.println("Funtion complete");
-	}
-	
-}
 
-//****************************************************************************************************************
-	
-//NAME:	       guess_My_Favorite_Num()
-//DESCRIPTION: A while loop that asks the user to guess my favorite number then displays if it is right or wrong
-	       with a line of text depanding on the users input.
-	
-//****************************************************************************************************************
-	
+       }
+    
+    //*********************************************************************************************** 
+    //NAME:	  basic_Counting_Loop 
+    //DESCRIPTION: A basic counting while loop that counts from 0 to 50 while the statement is true.  
+    //BY:Ryu Sasano
+    //*********************************************************************************************** 
 
-	public void guess_My_Favorite_Num()
-	{
-		////////////////////////////////////////////
-		
-		//LOCAL DEFINED VARIABLE/OBJECT
-		int favNumber = 1;
-		
-		Scanner num = new Scanner(System.in);
-		///////////////////////////////////////////
-		
-		System.out.println("Hey can you guess what my favorite number is?");
-		int numGuess = num.nextInt();
-		
-		while (favNumber != numGuess)
-		{
-			System.out.println("I am sorry but that is not my favoirte color please try again.");
-		     numGuess = num.nextInt();
-		}
-		
-		 	System.out.println("OMG yes 1 is my favorite number!");
-	}
+    public void basic_Counting_Loop()
+        { 
+
+		// LOCAL DEFINED VARIABLE 
+ 		int number = 0; 
+
+ 		while (number < 51) 
+
+ 		{ 
+
+			// Displays a line of text. 
+ 			System.out.println(number); 
+			//increments the number by 1. 
+
+ 			number++; 
+ 
+ 		}  
+ 	} 
+
+    //*************************************************************************************************** 
+    //NAME:			basic_Counting_Loop2 
+    //DESCRIPTION: A basic counting while loop that displays a line of text while the statment is true. 
+    //BY:Ryu Sasano
+    //**************************************************************************************************** 
+
+    public void basic_Counting_Loop2() 
+        { 
+
+            // LOCAL DEFINED VARIABLE 
+
+            int age = -11; 
+
+            //statement 
+
+            while (age < 11 ) 
+
+            { 
+                    //Displays a line of text. 
+
+                    System.out.println("she loves me..."); 
+
+                    // increments number by 1. 
+
+                    age++; 
+
+            } 
+
+            // Displays a line of text. 
+
+            System.out.println("Funtion complete"); 
+
+    } 
+
+    //****************************************************************************************************************  
+    //NAME:	       guess_My_Favorite_Num() 
+    //DESCRIPTION: A while loop that asks the user to guess my favorite number then displays if it is right or wrong 
+    //with a line of text depanding on the users input. 
+    //BY:Ryu Sasano        
+    //**************************************************************************************************************** 
+
+    public void guess_My_Favorite_Num()
+        { 
+            //////////////////////////////////////////// 
+            //LOCAL DEFINED VARIABLE/OBJECT 
+
+            int favNumber = 1; 
+
+            Scanner num = new Scanner(System.in); 
+            /////////////////////////////////////////// 
 
 
-}
+            System.out.println("Hey can you guess what my favorite number is?"); 
+
+            int numGuess = num.nextInt(); 
 
 
+            while (favNumber != numGuess) 
+
+            { 
+
+                    System.out.println("I am sorry but that is not my favoirte color please try again."); 
+
+                 numGuess = num.nextInt(); 
+
+            } 
+                    System.out.println("OMG yes 1 is my favorite number!"); 
+
+} 
+ 
+ } 
+ 
