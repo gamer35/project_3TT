@@ -10,7 +10,7 @@
 
 
 
-   Programmer                          :		1.Daimeon Rodriguez, 
+   Programmer                          :	1.Daimeon Rodriguez, 
                                                 2.Quang Nguyen, 
                                                 3.Donald Vuong 
                                                 4.Ryu Sasano                       
@@ -22,11 +22,11 @@
    Hours                               :        1.4
                                                 2.
                                                 3. 
-                                                4. 
+                                                4.3 
    Difficulty                          :        1.4
-                                                2. 
+                                                2.
                                                 3. 
-                                                4. 
+                                                4.1 
    Completion Date                     :        4/13/17            
    File Name                           :        Project_3tt_01.java                             
 
@@ -58,7 +58,7 @@
         thumb = http://imgur.com/gallery/u9CCe  
 
         question2 = http://www.clipartbest.com/clipart-KcnXL8Ldi
-
+	
 *******************************************************************************
 *******************************************************************************
 
@@ -68,12 +68,6 @@
         Quang Nguyen: For loops
         Donald Vuong: For-Each loops
         Ryu Sasano: While Loops
-        
-        For loop tutorial help: http://docs.oracle.com/cd/E11882_01/appdev.112/e25519/for_loop_statement.htm
-        Do-While loop tutorial help: https://docs.oracle.com/cd/E18283_01/appdev.112/e17126/while_loop_statement.htm
-        For Each loop tutorial help: https://docs.oracle.com/javase/1.5.0/docs/guide/language/foreach.html
-        While loop tutorial help: https://docs.oracle.com/cd/E18283_01/appdev.112/e17126/while_loop_statement.htm
-        
                             Thank You StackOverFlow!
         
 *******************************************************************************
@@ -471,7 +465,8 @@ public class Project_3tt_01{
 
 		// LOCAL DEFINED VARIABLE 
  		int number = 0; 
-
+		
+		//statement
  		while (number < 51) 
 
  		{ 
@@ -541,7 +536,7 @@ public class Project_3tt_01{
 
             int numGuess = num.nextInt(); 
 
-
+	     //statement
             while (favNumber != numGuess) 
 
             { 
